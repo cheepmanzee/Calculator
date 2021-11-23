@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: monospace, sans-serif;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #222;
+   background:#222 center / cover url(https://source.unsplash.com/1600x900/?village,city,town) no-repeat;
+}
+
+.calculator {
+   display: grid;
+   grid-template-columns: repeat(4,  80px);
+   grid-template-rows:minmax(120px, auto) repeat(5, 80px);
+   grid-gap: 2px;
+   background-color: #fff;
+   box-shadow: 0px 5px 30px #222;
+}
+
+.output {
+   background-color: #222222f5;
+   color: #fff;
+   grid-column: 1/ -1;
+   display: flex;
+   justify-content: end;
+   align-items: flex-end;
+   padding: 20px;
+   word-wrap: break-word;
+   word-break: break-all;
+   font-size: 2.6rem;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+.calculator button {
+   font-family: inherit;
+   font-size: 1.7rem;
+   min-width: 70px;
+   background-color: #f1f1f1;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: 0.1s ease;
+}
+
+.calculator button:hover {
+   background-color: #f8f8f8;
+}
+
+.two-col {
+   grid-column: span 2;
+}
+
+#equal {
+   background-color: orange;
+}
+#equal:hover {
+   background-color: rgb(255, 175, 27);
+}
+
